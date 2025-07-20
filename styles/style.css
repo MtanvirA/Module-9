@@ -9,28 +9,40 @@
 }
 
 /* Shared Styles */
+/* shaping the main part */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+
 /* class for using the flexbox */
-.display-flex{
+.display-flex {
     display: flex;
 }
 
 /* font colors */
-.dark2{
+.dark1 {
+    color: #131313;
+}
+
+.dark2 {
     color: #424242;
 }
 
-.dark3{
+.dark3 {
     color: #727272;
 }
 
 /* secondary color */
-.secondary-color{
+.secondary-color {
     background-color: rgba(255, 144, 14, 0.1);
 
 }
 
 /* button */
-.primary-button{
+.primary-button {
     color: white;
     padding: 20px;
     background-color: #FF900E;
@@ -40,8 +52,9 @@
     font-size: 1.25rem;
     font-weight: 600;
 }
+
 /* button hover effect */
-.primary-button:hover{
+.primary-button:hover {
     cursor: pointer;
 }
 
@@ -51,27 +64,29 @@
 
 
 /* Navigation Styles */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-item{
+.nav-item {
     list-style: none;
     margin-right: 30px;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     font-weight: 500;
 }
+
 /* to make it kind of responsive and it's also important for the future */
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.brand{
+.brand {
     font-weight: 700;
     font-size: 2.5rem;
 }
@@ -79,7 +94,7 @@
 
 /* banner styles */
 /* whole banner */
-.banner-content{
+.banner-content {
     max-width: 860px;
     margin: 0 auto;
     text-align: center;
@@ -88,24 +103,69 @@
 }
 
 /* banner title */
-.banner-title
-{
+.banner-title {
     font-weight: 700;
     font-size: 2.5rem;
 }
 
 /* banner image */
-.banner-image{
+.banner-image {
     width: 100%;
     margin-bottom: 50px;
 }
 
-/* responsive media query */
-@media screen and (max-width: 576px) {
-    .navbar, .nav-links{
-        flex-direction: column;
-    }
-    
+
+
+
+/* team section */
+.teams {
+    display: flex;
+    gap: 70px;
+
+}
+
+.team-images,
+.team-description {
+    margin: 80px auto;
+}
+
+.team-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.team-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-para {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.team-title {
+    font-size: 2.5rem;
 }
 
 
+/* responsive media query */
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .nav-links,
+    .teams {
+        flex-direction: column;
+    }
+
+    .team-images {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .team-description{
+        margin: 5 auto;
+    }
+}
