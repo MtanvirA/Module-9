@@ -152,6 +152,63 @@ main {
 }
 
 
+/* card section */
+
+.facts{
+    padding: 20px 50px;
+}
+.fact-cards{
+    display: flex;
+    gap: 120px;
+}
+
+.fact-title{
+    font-size: 2.5rem;
+    font-weight: 800px;
+
+}
+
+.fact-para{
+    font-size: 1rem;
+    
+}
+
+.fact-card{
+    padding: 35px;
+    text-align: center;
+    border: 2px solid #FF900E;
+    border-radius: 10px;
+    height: 240px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-num{
+    font-size: 2.5rem;
+    font-weight: 600px;
+
+}
+
+.card-name{
+    font-size: 1.2rem;
+    font-weight: 600px;
+
+}
+
+.card-img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.card-num, .card-img, .card-name{
+    margin: 10px auto;
+}
+
+
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
 
@@ -168,5 +225,6 @@ main {
 
     .team-description{
         margin: 5 auto;
+        
     }
 }
