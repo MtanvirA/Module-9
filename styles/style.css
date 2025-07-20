@@ -1,5 +1,5 @@
+/* Default Font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 .work-sans-font {
     font-family: "Work Sans", sans-serif;
@@ -7,3 +7,105 @@
     font-weight: 400;
     font-style: normal;
 }
+
+/* Shared Styles */
+/* class for using the flexbox */
+.display-flex{
+    display: flex;
+}
+
+/* font colors */
+.dark2{
+    color: #424242;
+}
+
+.dark3{
+    color: #727272;
+}
+
+/* secondary color */
+.secondary-color{
+    background-color: rgba(255, 144, 14, 0.1);
+
+}
+
+/* button */
+.primary-button{
+    color: white;
+    padding: 20px;
+    background-color: #FF900E;
+    border-radius: 10px;
+    border: none;
+    margin: 50px auto;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* button hover effect */
+.primary-button:hover{
+    cursor: pointer;
+}
+
+
+/* Header Styles */
+
+
+
+/* Navigation Styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+/* to make it kind of responsive and it's also important for the future */
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.brand{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+/* banner styles */
+/* whole banner */
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+
+/* banner title */
+.banner-title
+{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/* banner image */
+.banner-image{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    
+}
+
+
