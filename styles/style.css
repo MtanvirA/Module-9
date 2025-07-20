@@ -121,6 +121,7 @@ main {
 .teams {
     display: flex;
     gap: 70px;
+    margin: 0px 60px;
 
 }
 
